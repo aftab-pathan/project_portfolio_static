@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="full-project.css" />
+</head>
+
+<body>
+    <div id="sectionproject">
+        <div class="project-home-container">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class=" project-home-image" />
+            <h1 class="project-home-heading"> My Projects </h1>
+            <p class="project-home-description">
+                These are a few of my Static website projects that i have <br />
+                developed using HTML, CSS and Bootstrap.
+            </p>
+            <div class="d-flex flex-row justify-content-center">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="project-home-image" onclick="display('sectiontech')" />
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="project-home-image" onclick="display('sectiondiwali')" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="project-home-image" onclick="display('sectionfoodorder')" />
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="project-home-image" onclick="display('sectionnews')" />
+            </div>
+
+        </div>
+    </div>
+
+    <div id="sectiontech">
+        <div class="tech-bg-image-cover-page d-flex flex-column justify-content-end">
+            <div class="tech-card-cover">
+                <h1 class="tech-card-cover-heading">Advanced Technologies</h1>
+                <p class="tech-card-cover-description">
+                    Machinery and equipment developed
+                    from the application of scientific knowledge.
+                </p>
+                <button class="tech-button-1"> Learn more </button>
+                <button class="btn btn-primary tech-button-2" onclick="display('sectionproject')"> Back </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectiondiwali">
+        <div class="diwali-bg-container">
+            <h1 class="diwali-top-heading">
+                Celebrate Diwali with your friends
+            </h1>
+            <div class="diwali-bottom-container">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="diwali-bottom-card">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="diwali-bottom-card-image" />
+                        <h1 class="diwali-bottom-card-heading"> Diwali Air Balloon </h1>
+                        <p class="diwali-bottom-card-price"> RS. 369 </p>
+                    </div>
+
+                    <div class="diwali-bottom-card">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="diwali-bottom-card-image" />
+                        <h1 class="diwali-bottom-card-heading"> Diwali-lamp </h1>
+                        <p class="diwali-bottom-card-price"> RS. 50 </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="diwali-bottom-card">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="diwali-bottom-card-image" />
+                        <h1 class="diwali-bottom-card-heading"> Sparklers </h1>
+                        <p class="diwali-bottom-card-price"> RS. 150 </p>
+                    </div>
+
+                    <div class="diwali-bottom-card">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="diwali-bottom-card-image" />
+                        <h1 class="diwali-bottom-card-heading"> Fire Cracker </h1>
+                        <p class="diwali-bottom-card-price"> RS. 560 </p>
+                    </div>
+                </div>
+                <button class="btn btn-primary " onclick="display('sectionproject')">
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionfoodorder">
+        <div class="food-bg-image d-flex flex-column justify-content-end">
+            <div class="food-card">
+                <h1 class="food-main-heading"> Happy Meals</h1>
+                <p class="food-paragraph"> Discover the best foods over the 1,000 restaurants</p>
+                <div>
+                    <button class=" food-button"> Book Now</button>
+                    <button class=" btn btn-primary" onclick="display('sectionproject')"> Back </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionnews">
+        <div class="news-page-bg-container d-flex flex-column justify-content-end">
+            <div class="news-page-card">
+                <p class="news-card-heading-1"> NEWS OF THE DAY</p>
+                <h1 class="news-page-card-heading-2"> All educational institutions in Assam
+                    to reopen from November 2</h1>
+                <p class="news-page-card-description">
+                    Uttar Pradesh Gautam buddh Nagar recorded 107 ne covid-19
+                    cases on Saturday,pushing the district's infection tally to
+                    10,803, Official data showed.the number of active cases came down
+                    further to 1,384 from 1,477 on Friday and 1,523 on Thursday,according to
+                    the data released by the UP Health department for a 24-Hour period.
+                </p>
+                <button class="news-page-card-button"> Read more </button>
+                <button class=" btn btn-primary news-page-card-button-2" onclick="display('sectionproject')"> Back </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
